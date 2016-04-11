@@ -5,12 +5,11 @@
   </header>
 
   <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">Title</span>
+    <span class="mdl-layout-title">Paborito</span>
     <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Home</a>
+      <a class="mdl-navigation__link" href="">Search</a>
+      <a class="mdl-navigation__link" href="">Add</a>
     </nav>
   </div>
 
@@ -34,6 +33,9 @@
           </button>
         </div>
       </div>
+
+      <fav-card creation-date="main.creationDate"></fav-card>
+
       <div class="mdl-grid">
 
         <div class="mdl-cell mdl-cell--4-col" ng-repeat="awesomeThing in main.awesomeThings | orderBy:'rank'">
