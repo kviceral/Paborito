@@ -37,6 +37,27 @@
       <fav-card creation-date="main.creationDate"></fav-card>
 
       <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--4-col" ng-repeat="fav in main.favs ">
+          <div class="acme-card-square mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text">{{ fav.name }}</h2>
+            </div>
+            <div class="mdl-card__media">
+              <img ng-src="assets/images/{{ fav.img }}" alt="{{ awesomeThing.name }}">
+            </div>
+            <div class="mdl-card__supporting-text">
+              {{ fav.description }}
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" ng-href="{{ fav.url }}">
+                Website
+              </a>
+            </div>
+          </div>
+        </div>
+      <div>
+
+      <div class="mdl-grid">
 
         <div class="mdl-cell mdl-cell--4-col" ng-repeat="awesomeThing in main.awesomeThings | orderBy:'rank'">
           <div class="acme-card-square mdl-card mdl-shadow--2dp">
