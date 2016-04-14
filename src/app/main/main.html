@@ -34,60 +34,13 @@
         </div>
       </div>
 
-      <fav-card creation-date="main.creationDate"></fav-card>
-
       <div class="mdl-grid">
         <div class="mdl-cell mdl-cell--4-col" ng-repeat="fav in main.favs ">
-          <div class="acme-card-square mdl-card mdl-shadow--2dp">
-            <div class="mdl-card__title">
-              <h2 class="mdl-card__title-text">{{ fav.name }}</h2>
-            </div>
-            <div class="mdl-card__media">
-              <img ng-src="assets/images/{{ fav.img }}" alt="{{ awesomeThing.name }}">
-            </div>
-            <div class="mdl-card__supporting-text">
-              {{ fav.description }}
-            </div>
-            <div class="mdl-card__actions mdl-card--border">
-              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" ng-href="{{ fav.url }}">
-                Website
-              </a>
-            </div>
-          </div>
+          <fav-card item="fav"></fav-card>
         </div>
       <div>
 
-      <div class="mdl-grid">
-
-        <div class="mdl-cell mdl-cell--4-col" ng-repeat="awesomeThing in main.awesomeThings | orderBy:'rank'">
-          <div class="acme-card-square mdl-card mdl-shadow--2dp">
-            <div class="mdl-card__title">
-              <h2 class="mdl-card__title-text">{{ awesomeThing.title }}</h2>
-            </div>
-            <div class="mdl-card__media">
-              <img ng-src="assets/images/{{ awesomeThing.logo }}" alt="{{ awesomeThing.title }}">
-            </div>
-            <div class="mdl-card__supporting-text">
-              {{ awesomeThing.description }}
-            </div>
-            <div class="mdl-card__actions mdl-card--border">
-              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" ng-href="{{ awesomeThing.url }}">
-                Website
-              </a>
-            </div>
-          </div>
-        </div>
-
-      </div>
     </div>
   </main>
-
-  <footer class="mdl-mini-footer">
-    <div class="mdl-mini-footer__right-section">
-      <div class="mdl-logo">
-        With ♥ thanks to the contributions of<acme-malarkey extra-values="['Yeoman', 'Gulp', 'Angular']"></acme-malarkey>
-      </div>
-    </div>
-  </footer>
 
 </div>

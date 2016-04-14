@@ -17,7 +17,7 @@ export class SampleFavDataService {
         'tags': ['Restaurant', 'Japanese']
       },
       {
-        'name': 'Franks Gourmet Hotdogsi',
+        'name': 'Franks Gourmet Hotdogs',
         'url': 'http://www.fancyfranks.com/',
         'description': 'Hip counter serve specializing in gourmet franks with unique toppings, from kimchi to PB&J.',
         'address': '326 College St, Toronto, ON M5T 1S3',
