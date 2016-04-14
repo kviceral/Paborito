@@ -5,10 +5,10 @@ export function FavCardDirective() {
     restrict: 'E',
     templateUrl: 'app/components/favcard/favcard.html',
     scope: {
-      creationDate: '='
+      item: '='
     },
     controller: FavCardController,
-    controllerAs: 'vm',
+    controllerAs: 'ctrl',
     bindToController: true
   };
 
@@ -16,10 +16,7 @@ export function FavCardDirective() {
 }
 
 class FavCardController {
-  constructor (moment) {
+  constructor () {
     'ngInject';
-
-    // "this.creation" is available by directive option "bindToController: true"
-    this.relativeDate = moment(this.creationDate).fromNow();
   }
 }
